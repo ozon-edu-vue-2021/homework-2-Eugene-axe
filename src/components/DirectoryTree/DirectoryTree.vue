@@ -16,7 +16,7 @@
 <script>
 import DirectoryClose from "../icons/directoryClose.vue";
 import DirectoryOpen from "../icons/directoryOpen.vue";
-import EventBus from "../EventBus/EventBus";
+import EventBus from "../../EventBus";
 import {GET_TREE_FULL_PATH} from '../../constants/events'
 
 export default {

@@ -7,7 +7,7 @@
 
 <script>
 import DataTree from '../public/static/node_modules.json';
-import EventBus from './components/EventBus/EventBus';
+import EventBus from './EventBus';
 import {GET_TREE_FULL_PATH} from './constants/events';
 
 
