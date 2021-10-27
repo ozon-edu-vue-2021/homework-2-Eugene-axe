@@ -37,6 +37,7 @@ export default {
   margin: 0 auto;
   width: 80%;
   background-color: rgb(212, 208, 208);
+  user-select: none;
 }
 ul {
   list-style-type: none;
