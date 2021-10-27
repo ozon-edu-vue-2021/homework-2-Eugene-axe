@@ -1,0 +1,27 @@
+[
+    {"type":"file","name":"file_1"},
+    {"type":"file","name":"file_2"},
+    {"type":"link","name":"sc-design-utils","target":"../../packages/sc-design-utils","contents":[]},
+    {"type":"directory","name":"directory_1","contents":[
+        {"type":"file","name":"file_1__1"},
+        {"type":"file","name":"file_1__2"},
+        {"type":"directory","name":"directory_1__1","contents":[
+            {"type":"file","name":"file_1__1__1"},
+            {"type":"link","name":"sc-design-utils","target":"../../packages/sc-design-utils","contents":[]},
+            {"type":"file","name":"file_1__1__2"}
+        ]}
+    ]},
+    {"type":"directory","name":"directory_2","contents":[
+        {"type":"file","name":"file_2__1"},
+        {"type":"file","name":"file_2__2"},
+        {"type":"file","name":"file_2__3"},
+        {"type":"directory","name":"directory_2__1","contents":[
+            {"type":"file","name":"file_2__1__1"},
+            {"type":"file","name":"file_2__1__2"},
+            {"type":"directory","name":"directory_2__1__1","contents":[
+                {"type":"file","name":"file_2__1__1__1"},
+                {"type":"file","name":"file_2__1__1___1"}
+            ]}
+        ]}
+    ]}
+            ]   
