@@ -17,6 +17,7 @@
 import DirectoryClose from "../icons/directoryClose.vue";
 import DirectoryOpen from "../icons/directoryOpen.vue";
 import EventBus from "../EventBus/EventBus";
+import {GET_TREE_FULL_PATH} from '../../constants/events'
 
 export default {
   name: "DirectoryTree",
@@ -47,7 +48,7 @@ export default {
       this.changeFullPath();
     },
     changeFullPath() {
-      EventBus.$emit("getFullPath", this.isShow ? this.fullPath : this.parentPath);
+      EventBus.$emit(GET_TREE_FULL_PATH, this.isShow ? this.fullPath : this.parentPath);
     },
   },
 };

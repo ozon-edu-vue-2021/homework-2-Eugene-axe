@@ -14,6 +14,7 @@
 
 <script>
 import EventBus from "../EventBus/EventBus";
+import {GET_TREE_FULL_PATH} from '../../constants/events'
 
 export default {
   name: "FileTree",
@@ -42,7 +43,7 @@ export default {
       this.isActive = false;
     },
     changeFullPath() {
-      EventBus.$emit("getFullPath", this.fullPath);
+      EventBus.$emit(GET_TREE_FULL_PATH, this.fullPath);
     },
   },
 };

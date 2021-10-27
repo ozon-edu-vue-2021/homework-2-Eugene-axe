@@ -8,6 +8,7 @@
 <script>
 import DataTree from '../public/static/node_modules.json';
 import EventBus from './components/EventBus/EventBus';
+import {GET_TREE_FULL_PATH} from './constants/events';
 
 
 export default {
@@ -20,8 +21,7 @@ export default {
     ItemTree : () => import('./components/ItemTree/ItemTree.vue')
   },
   created(){
-    EventBus.$on('getFullPath' , (path)=>{
-      console.log(path);
+    EventBus.$on(GET_TREE_FULL_PATH , path =>{
       this.fullPath = path;
     })
   },

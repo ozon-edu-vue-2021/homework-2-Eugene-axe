@@ -1,6 +1,6 @@
 <template>
   <ul>
-    <li v-for="(child, i) in childrens" :key="child.name + i">
+    <li v-for="child in childrens" :key="child.name">
       <directory-tree v-if="child.type === 'directory'" :child="child" :parentPath="parentPath + '/'" />
       <file-tree v-else-if="child.type === 'file'" :child="child" :parentPath="parentPath + '/'">
         <template v-slot:icon>
@@ -22,6 +22,7 @@
 import FileTree from "../FileTree/FileTree.vue";
 import FileIcon from "../icons/FileIcon.vue";
 import LinkIcon from "../icons/LinkIcon.vue";
+
 export default {
   name: "ItemTree",
   props: {
