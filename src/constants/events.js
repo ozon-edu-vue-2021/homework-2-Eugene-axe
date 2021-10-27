@@ -1,0 +1,1 @@
+export const GET_TREE_FULL_PATH = 'getFullPath';
